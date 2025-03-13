@@ -1,0 +1,44 @@
+
+.form-group {
+  display: inline-block;
+  width: 200px;
+  margin: 5px 0;
+  vertical-align: top; 
+}
+label {
+  display: inline-block;
+  width: 80px;
+  font-weight: bold;
+}
+input[type="text"], 
+input[type="password"],
+input[type="email"],
+select {
+  width: 100px;
+  padding: 3px;
+  margin-left: 5px;
+}
+textarea {
+  width: 200px;
+  height: 60px;
+  margin-left: 5px;
+}
+.radio-group,
+.checkbox-group {
+  width: auto;
+  display: inline-block;
+}
+.submit-button {
+  margin-top: 10px;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+.info {
+  margin-bottom: 8px;
+}
+.field-name {
+  font-weight: bold;
+}
+
