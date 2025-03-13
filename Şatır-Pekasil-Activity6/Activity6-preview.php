@@ -3,24 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <title>Activity6 - Preview</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-    .info {
-      margin-bottom: 8px;
-    }
-    .field-name {
-      font-weight: bold;
-    }
-  </style>
 </head>
 <body>
   <h1>Form Submission Preview</h1>
 
   <?php
-    // A helper function to check if a field is empty
     function checkField($fieldName) {
       if(isset($_POST[$fieldName]) && trim($_POST[$fieldName]) !== "") {
         return $_POST[$fieldName];
@@ -28,41 +15,28 @@
         return "$fieldName is not provided.";
       }
     }
-    
-    // For fields that might be arrays (like checkboxes), handle them separately
     function checkArrayField($fieldName) {
       if(!empty($_POST[$fieldName])) {
-        // $_POST[$fieldName] will be an array of selected values
+
         return implode(", ", $_POST[$fieldName]);
       } else {
         return "$fieldName is not provided.";
       }
     }
 
-    // Name
     $name = checkField("name");
-    // Username
     $username = checkField("username");
-    // Password
     $password = checkField("password");
-    // Address
     $address = checkField("address");
-    // Country
     $country = checkField("country");
-    // ZIP
     $zip = checkField("zip");
-    // Email
     $email = checkField("email");
-    // Sex (radio)
-    // Notice we can also check if 'sex' is set
     if(isset($_POST["sex"]) && $_POST["sex"] !== "") {
       $sex = $_POST["sex"];
     } else {
       $sex = "Sex is not provided.";
     }
-    // Languages (checkboxes)
     $languages = checkArrayField("languages");
-    // About
     $about = checkField("about");
   ?>
 
