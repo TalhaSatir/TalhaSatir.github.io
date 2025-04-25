@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #eee;
+    padding: 20px;
+  }
+  
+  form {
+    background: #fff;
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+  }
+  
+  label {
+    display: inline-block;
+    width: 200px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="url"] {
+    width: 100%;
+    padding: 6px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  
+  input[type="submit"] {
+    padding: 10px;
+    background: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
