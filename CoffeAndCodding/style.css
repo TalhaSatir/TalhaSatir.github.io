@@ -1,25 +1,24 @@
-
-/* RESET */
+/* RESET: Remove default margins and paddings */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BODY */
+/* BODY: Global font settings */
 html, body {
   font-family: 'Poppins', sans-serif;
- color: #555;
+  color: #555;
 }
 
-/* Container */
+/* CONTAINER: Limit content width and center align */
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* NAVBAR */
+/* NAVBAR: Styles for the top navigation bar */
 .navbar {
   background-color: #1F1F1F;
   position: sticky;
@@ -27,6 +26,7 @@ html, body {
   z-index: 999;
 }
 
+/* NAV CONTENT: Flex container for nav items */
 .nav-content {
   display: flex;
   justify-content: space-between;
@@ -34,6 +34,7 @@ html, body {
   padding: 1rem 0;
 }
 
+/* LOGO: Style for the website logo */
 .logo {
   color: #fff;
   font-weight: 600;
@@ -41,12 +42,14 @@ html, body {
   text-decoration: none;
 }
 
+/* NAV LINKS: Style for the navigation menu */
 .nav-links {
   list-style: none;
   display: flex;
   gap: 1rem;
 }
 
+/* NAV LINKS ANCHORS: Link styles in the navbar */
 .nav-links a {
   color: #fff;
   text-decoration: none;
@@ -54,11 +57,13 @@ html, body {
   transition: color 0.3s;
 }
 
+/* NAV LINKS HOVER/ACTIVE: Hover and active link effects */
 .nav-links a:hover,
 .nav-links a.active {
   color: #C39758; 
 }
 
+/* BTN LOGIN: Special styling for the Sign Up button */
 .btn-login {
   background-color: #C39758;
   padding: 0.5rem 1rem;
@@ -71,7 +76,7 @@ html, body {
   background-color: #a57c40;
 }
 
-/* HERO SECTION */
+/* HERO SECTION: Full screen background image and overlay */
 .hero {
   position: relative;
   height: 70vh;
@@ -79,13 +84,11 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  
   background: url("images/matrix_effect.gif") no-repeat center center;
   background-size: cover;  
 }
 
-
+/* HERO OVERLAY: Dark overlay over the hero image */
 .hero-overlay {
   position: absolute;
   top: 0; left: 0;
@@ -93,6 +96,7 @@ html, body {
   background: rgba(0, 0, 0, 0.4);
 }
 
+/* HERO CONTENT: Text and button positioning in the hero section */
 .hero-content {
   position: relative;
   text-align: center;
@@ -110,6 +114,7 @@ html, body {
   margin-bottom: 1.5rem;
 }
 
+/* CTA BUTTON: Style for call-to-action button */
 .btn-cta {
   background-color: #C39758;
   color: #fff;
@@ -124,7 +129,7 @@ html, body {
   background-color: #a57c40;
 }
 
-/* FEATURED SECTION */
+/* FEATURED SECTION: Highlight projects section */
 .featured {
   text-align: center;
   padding: 3rem 0;
@@ -137,6 +142,7 @@ html, body {
   color: #2C2C2C;
 }
 
+/* CARDS: Container for project cards */
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -144,6 +150,7 @@ html, body {
   justify-content: center;
 }
 
+/* CARD: Individual project card styling */
 .card {
   background-color: #fff;
   width: calc(33.333% - 1rem);
@@ -170,6 +177,7 @@ html, body {
   margin-bottom: 1rem;
 }
 
+/* SECONDARY BUTTON: Style for secondary action buttons */
 .btn-secondary {
   display: inline-block;
   color: #C39758;
@@ -186,7 +194,7 @@ html, body {
   color: #fff;
 }
 
-/* ABOUT SECTION */
+/* ABOUT SECTION: Styles for the About section */
 .about {
   padding: 3rem 0;
   text-align: center;
@@ -207,7 +215,7 @@ html, body {
   margin-bottom: 1rem;
 }
 
-/* CONTACT SECTION */
+/* CONTACT SECTION: Styles for the Contact section */
 .contact {
   padding: 3rem 0;
   text-align: center;
@@ -228,7 +236,7 @@ html, body {
   color: #555;
 }
 
-/* Contact cards layout */
+/* CONTACT CARDS: Layout for contact details */
 .contact-cards {
   display: flex;
   flex-wrap: wrap;
@@ -257,7 +265,7 @@ html, body {
   color: #2C2C2C;
 }
 
-/* FOOTER */
+/* FOOTER: Global footer styling */
 .footer {
   background-color: #1F1F1F;
   color: #fff;
@@ -275,6 +283,7 @@ html, body {
   margin-bottom: 0.5rem;
 }
 
+/* SOCIAL LINKS: Style for social media icons */
 .social-links a {
   color: #fff;
   margin: 0 0.5rem;
@@ -287,11 +296,9 @@ html, body {
   color: #C39758;
 }
 
-
 .social-icon {
   width: 32px;
   height: 32px;
-  
   transition: opacity 0.3s;
   margin: 0 0.5rem; 
 }
@@ -300,14 +307,8 @@ html, body {
   opacity: 0.8;
 }
 
-
-
 /* FAQ PAGE STYLES */
-
-
-/* FAQ Page Title */
-
-
+/* Background Moving Image */
 .moving-image {
   position: fixed; 
   top: 0;
@@ -318,7 +319,7 @@ html, body {
   z-index: -1; 
 }
 
-
+/* FAQ Title */
 .faq-title {
   text-align: center;
   margin-top: 2rem;
@@ -328,7 +329,6 @@ html, body {
 
 /* FAQ Section Card */
 .faq-section {
-  
   background-size: 150px auto;
   max-width: 800px;
   margin: 2rem auto;
@@ -338,7 +338,7 @@ html, body {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* FAQ Items (Accordion) */
+/* FAQ Item Styles */
 .faq-item {
   margin-bottom: 1rem;
   border-bottom: 1px solid #ddd;
@@ -355,10 +355,12 @@ html, body {
   outline: none;
 }
 
-/* Remove default marker and add custom icons */
+/* Remove default summary marker */
 .faq-item summary::-webkit-details-marker {
   display: none;
 }
+
+/* Custom icons for FAQ items */
 .faq-item::before {
   content: "➕";
   margin-right: 0.5rem;
@@ -376,7 +378,7 @@ html, body {
   color: #555;
 }
 
-/* Submit Question Card */
+/* SUBMIT QUESTION CARD: Styles for question submission */
 .submit-question {
   max-width: 800px;
   margin: 2rem auto;
@@ -403,7 +405,7 @@ html, body {
   font-size: 1rem;
 }
 
-/* Enhanced Submit Button */
+/* SUBMIT BUTTON: Enhanced button styling */
 .btn-submit {
   background-color: #4A90E2;
   color: #fff;
@@ -423,9 +425,8 @@ html, body {
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-
 /* SUPPORT PAGE LAYOUT */
-
+/* Background wrapper for support page */
 .background-wrapper {
   position: fixed;    
   top: 0;
@@ -442,6 +443,8 @@ html, body {
   object-fit: cover;  
   display: block;
 }
+
+/* Support Container Layout */
 .support-container {
   display: flex;
   align-items: flex-start;
@@ -450,6 +453,7 @@ html, body {
   margin: 2rem auto;
 }
 
+/* Support Information Section */
 .support-info {
   flex: 1;
 }
@@ -469,7 +473,7 @@ html, body {
   text-decoration: underline;
 }
 
-/* White card for the form */
+/* Support Form Card */
 .support-form-container {
   flex: 1;
   width: 100%;
@@ -481,12 +485,19 @@ html, body {
   box-sizing: border-box;
 }
 
-/* Form fields */
-.support-form .form-row {
+/* Support Form Fields */
+#support-form .form-row {
   margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
 }
+
+
+.is-invalid { border: 1px solid #e74c3c !important; }
+.is-valid   { border: 1px solid #2ecc71 !important; }
+
+
+.ui-datepicker { font-family: 'Poppins', sans-serif; }
 .support-form label {
   font-weight: 600;
   margin-bottom: 0.5rem;
@@ -503,7 +514,8 @@ html, body {
   resize: vertical;
 }
 
-/* Purple "Send your request" button */
+
+/* Request Button: Styles for support request button */
 .request-btn {
   background-color: #6c4df0;
   color: #fff;
@@ -528,15 +540,14 @@ html, body {
   line-height: 1;
 }
 
-/* Optional Purple Bar */
+/* Optional Purple Bottom Bar */
 .support-bottom-bar {
   width: 100%;
   height: 80px;
-  
 }
 
-
-/* Activities */
+/* ACTIVITIES SECTION */
+/* Activities Container Layout */
 .activities-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -565,7 +576,9 @@ html, body {
   font-size: 14px;
   color: #666;
 }
-/* Forum part */
+
+/* FORUM SECTION */
+/* Forum Container Layout */
 .forum-container {
   margin-top: 20px;
   background: #f8f8f8;
@@ -574,12 +587,14 @@ html, body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Forum Header */
 .forum-header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
 }
 
+/* Generic Button Styles */
 .btn {
   background: #007bff;
   color: white;
@@ -590,10 +605,12 @@ html, body {
   transition: background 0.3s ease;
 }
 
+/* Button Hover State */
 .btn:hover {
   background: #0056b3;
 }
 
+/* Forum Actions: New Topic Button */
 .forum-actions {
   text-align: right;
   margin-bottom: 20px;
@@ -607,6 +624,7 @@ html, body {
   background: #218838;
 }
 
+/* Forum Topics: List of Topics */
 .forum-topics {
   border-top: 2px solid #ddd;
   padding-top: 15px;
@@ -640,7 +658,8 @@ html, body {
   color: #333;
 }
 
-/*Projects part */
+/* PROJECTS SECTION */
+/* Projects Container Layout */
 .projects-container {
   margin-top: 20px;
   display: grid;
@@ -670,6 +689,7 @@ html, body {
   color: #666;
 }
 
+/* Generic Button (for projects) */
 .btn {
   background: #007bff;
   color: white;
@@ -686,22 +706,21 @@ html, body {
   background: #0056b3;
 }
 
+/* File Input: Hidden file input for assignment submissions */
 .file-input {
   margin-top: 10px;
   display: none;
 }
 
-
-
-
 /* RESPONSIVE DESIGN */
+/* Adjust card width for medium screens */
 @media (max-width: 992px) {
   .card {
     width: calc(50% - 1rem);
   }
 }
 
-
+/* Adjust layout for small screens */
 @media (max-width: 768px) {
   .nav-links {
     flex-direction: column;
@@ -719,6 +738,7 @@ html, body {
   }
 }
 
+/* Mobile adjustments */
 @media (max-width: 576px) {
   .card {
     width: 100%;
@@ -728,7 +748,6 @@ html, body {
     align-items: center;
   }
 }
-
 
 
 
